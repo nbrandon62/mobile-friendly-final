@@ -6,15 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- CSS link and IG art link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e78579f4ca.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/about.css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- FONT links -->
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fira+Sans:ital,wght@1,700;1,900&family=Rowdies&display=swap" rel="stylesheet">
     <title>ABOUT</title>
 </head>
 
@@ -22,7 +21,7 @@
 <body>
   <header class="container">
     <div class="row">
-      <h1 class="col-sm-8"><a href="index.html">REFLOW</a></h1>
+      <h1 class="col-sm-8"><a href="index.html" class="text-decoration-none">REFLOW</h1></a>
       <nav class="col-sm-4">
         <div class="dropdown">
           <button class="dropbtn">shop</button>
@@ -34,31 +33,92 @@
             <a href="antiques.html">Antiques</a>
           </div>
         </div>
-        <a href="about.html">about</a>
-        <a href="contact.html">contact</a>
+        <a href="about.html" class="text-decoration-none">about</a>
+        <a href="contact.html" class="text-decoration-none">contact</a>
       </nav>
     </div>
   </header>
 
+  <!-- First Parallax "welcome to reflow" -->
+  <div class="parallax container-fluid" id="parallaxOne">
+    <!-- container for text+button -->
+    <div class="jumbotron d-flex flex-column justify-content-center align-items-center">
+      <h1 class="display-1 fw-bold text-black mt-auto p-3" id="parallaxOneHeader">Welcome to REFLOW</h1>
+      <!-- button to move to next parallax -->
+      <div class="button_container mt-auto mb-4">
+        <a class="btn btn-circle btn-md bg-secondary bg-opacity-50" href="#parallaxTwo"><i class="fas fa-chevron-down fa-lg mt-2 text-white"></i></a>
+      </div>
+    </div>
+  </div>
 
-        <!-- DIV for footer starts here -->
-        <footer class="container">
-          <div class="row">
-            <p class="col-sm-4">&copy; 2022 REFLOW</p>
-            <ul class="col-sm-8">
-              <li class="col-sm-1">
-                <a href="https://twitter.com" class="fa fa-twitter"></a>
-              </li>
-              <li class="col-sm-1">
-                <a href="https://www.facebook.com" class="fa fa-facebook"></a>
-              </li>
-              <li class="col-sm-1">
-                <a href="https://www.instagram.com" class="fa fa-instagram"></a>
-              </li>
-              <li class="col-sm-1">
-                <a href="https://www.pinterest.com" class="fa fa-pinterest"></a>
-              </li>
-            </ul>
-          </div>
-        </footer>
-</body>
+<!-- second parallax "Our Mission text" -->
+<div class="parallax p-4 container-fluid" id="parallaxTwo">
+  <div class="jumbotron d-flex flex-column justify-content-center align-items-center">
+    <!-- container for text+buttons and give it a background for readability -->
+    <div class="d-flex flex-column align-items-center mt-3 p-5 ">
+      <h1 class="title_text display-6 fw-bold text-black">Our Mission</h1>
+      <p class="fs-4 text-black">"01.0102.010"</p>
+      <p class="fs-5 text-black mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ab eveniet repudiandae quis nesciunt? Nostrum temporibus quibusdam recusandae incidunt, aspernatur culpa, sequi voluptas, placeat ut officiis neque similique accusamus natus tenetur. Consequatur explicabo blanditiis vitae sunt. Repellendus sapiente consectetur dicta iste suscipit voluptatem velit unde esse. Quam sequi sint odit et dolore. Natus laborum consectetur aut quam nam alias doloremque architecto facilis voluptate voluptatum possimus dolorem ab minima suscipit distinctio ex, ducimus vitae reprehenderit, corporis impedit labore. Eveniet omnis a tempora corrupti ipsam ipsum laboriosam quaerat sequi voluptates atque soluta illum suscipit quas voluptas incidunt impedit, totam ea laborum cupiditate.</p>
+    <!-- next para button -->
+    <div class="button_container mt-auto"></div>
+      <a class="btn btn-circle btn-md bg-secondary bg-opacity-50" href="#parallaxThree"><i class="fas fa-chevron-down fa-lg mt-2 text-white"></i></a>
+    </div>
+  </div>
+</div>
+
+  <!-- Third parallax "donate image" -->
+  <div class="parallax p-4 container-fluid" id="parallaxThree">
+    <div class="jumbotron d-flex flex-column justify-content-center align-items-center">
+      <!-- next para button -->
+      <div class="button_container mt-auto"></div>
+        <a class="btn btn-circle btn-md bg-secondary bg-opacity-50" href="#parallaxFour"><i class="fas fa-chevron-down fa-lg mt-2 text-white"></i></a>
+      </div>
+    </div>
+  </div>
+
+<!-- second parallax "How To Donate text" -->
+<div class="parallax p-4 container-fluid" id="parallaxFour">
+  <div class="jumbotron d-flex flex-column justify-content-center align-items-center">
+    <!-- container for text+buttons and give it a background for readability -->
+    <div class="d-flex flex-column align-items-center mt-3 p-5 ">
+      <h1 class="title_text display-6 fw-bold text-black">How To Donate</h1>
+      <p class="fs-4 text-black">"01.0102.010"</p>
+      <p class="fs-5 text-black mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ab eveniet repudiandae quis nesciunt? Nostrum temporibus quibusdam recusandae incidunt, aspernatur culpa, sequi voluptas, placeat ut officiis neque similique accusamus natus tenetur. Consequatur explicabo blanditiis vitae sunt. Repellendus sapiente consectetur dicta iste suscipit voluptatem velit unde esse. Quam sequi sint odit et dolore. Natus laborum consectetur aut quam nam alias doloremque architecto facilis voluptate voluptatum possimus dolorem ab minima suscipit distinctio ex, ducimus vitae reprehenderit, corporis impedit labore. Eveniet omnis a tempora corrupti ipsam ipsum laboriosam quaerat sequi voluptates atque soluta illum suscipit quas voluptas incidunt impedit, totam ea laborum cupiditate.</p>
+    <!-- next para button -->
+    <div class="button_container mt-auto"></div>
+      <a class="btn btn-circle btn-md bg-secondary bg-opacity-50" href="#parallaxFive"><i class="fas fa-chevron-down fa-lg mt-2 text-white"></i></a>
+    </div>
+  </div>
+</div>
+
+  <!-- Fifth parallax "PLUSHY image" -->
+<div class="parallax p-4 container-fluid " id="parallaxFive">
+    <div class="jumbotron d-flex flex-column justify-content-center align-items-center ">
+      <h1 class="display-1 fw-bold text-white p-3 " id="parallaxOneHeader">Visit our Plushy Page</h1>
+        <p class="fs-4 text-white text-center"> Any purchase with PLUSHI will gurantee you <br> with a 15% discount on your next purchase. <a href="https://nbrandon62.github.io/W4Bfinal/" class="text-white">Shop Here.</p></a>
+</div>
+
+<!-- FOOTER starts here -->
+<footer class="container">
+  <div class="row">
+    <p class="col-sm-4">&copy; 2022 REFLOW</p>
+    <ul class="col-sm-8">
+      <li class="col-sm-1">
+        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+      </li>
+      <li class="col-sm-1">
+        <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+      </li>
+      <li class="col-sm-1">
+        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+      </li>
+      <li class="col-sm-1">
+        <a href="https://www.pinterest.com"><i class="fab fa-pinterest"></i></a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+  <!-- Javascript: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>

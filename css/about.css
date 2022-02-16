@@ -1,5 +1,4 @@
 body {
-    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     margin:0% auto
   }
@@ -92,6 +91,63 @@ body {
       
   }
 
+
+/* set body and html height to 100% for parallax */
+body, html, .jumbotron{
+  height: 100%;
+  width: 100%;
+}
+
+.jumbotron{
+  font-family: 'Rowdies';
+}
+
+/* general parallax css */
+.parallax{
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#parallaxOneHeader{
+  font-family: 'Fira Sans', sans-serif;
+  
+}
+
+/* individual parallax images */
+#parallaxOne{
+  background-image: url(../img/parallax-1.webp);
+}
+
+#parallaxTwo{
+  background-image: none;
+}
+
+#parallaxThree{
+  background-image: url(../img/donation.webp);
+}
+
+#parallaxFive{
+  background-image: url(../img/parallax-four.webp);
+}
+
+#parallaxFive{
+  /* background-image: url(../img/beach-1.webp); */
+}
+
+/* allow navbar to follow scrolling by using position: fixed, also provide some margin */
+.navbar_container{
+  /* position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  margin-left: 11%;
+  margin-right: 11%;
+  margin-top: 0.5%; */
+}
+
     /* FOOTER css and media queries start here */
     footer {
       font-size: 12px;
@@ -124,12 +180,12 @@ body {
       }
     }
   
-    .fa:hover {
+    i.fab:hover {
       color: black;
     }
   
     .fa-twitter, .fa-facebook, .fa-instagram, .fa-pinterest {
     background: none;
     color: burlywood;
-    font-size: 35px;
+    font-size: 40px;
     }

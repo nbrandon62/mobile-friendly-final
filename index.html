@@ -6,15 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- CSS link and IG art link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e78579f4ca.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/home.css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- FONT links -->
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fira+Sans:wght@700&family=Rowdies&display=swap" rel="stylesheet">
     <title>HOME</title>
 
 </head>
@@ -35,68 +34,112 @@
               <a href="antiques.html">Antiques</a>
             </div>
           </div>
-          <a href="about.html">about</a>
-          <a href="contact.html">contact</a>
+          <a href="about.html" class="text-decoration-none">about</a>
+          <a href="contact.html" class="text-decoration-none">contact</a>
         </nav>
       </div>
     </header>
 
-    <!-- JUMBOTRON div -->
-    <section class="jumbotron">
-        <h2>Spring collection is here</h2>
-    </section>
+    <!-- CAROUSEL div -->
+    <div class="container w-200">
+      <div class="row">
+        <div class="col">
+        <!-- CAROUSEL IMAGES start here  -->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active position-relative">
+              <img src="./img/womens1.webp" class="d-block w-100" alt="...">
+              <!-- TEXT for IMG-1 here -->
+              <div class="p-4 position-absolute top-0 start-0 text-black d-sm-block">
+                <h1 class="fs-1 fw-bold">Shop New Arrivals</h1>
+                <p class="fs-4">New springs arrivals are here. Over 500 items to select from. </p>
+              </div>
+            </div>
+            <!-- TEXT for IMG-2 here -->
+            <div class="carousel-item">
+              <img src="./img/carousel-1.jpeg" class="d-block w-100" alt="...">
+               <div class="carousel-caption position-absolute top-50 start-50 translate-middle text-white d-sm-block w-20 h-20">
+                <h1 class="fs-1 fw-bold">Select Mens Items for Spring</h1>
+                  <p class="fs-4 mb-3">Over 200 new items came in for Spring. Show Now. </p>
+              </div>
+            </div>
+            <!-- TEXT for IMG-3 here -->
+            <div class="carousel-item">
+              <img src="./img/donations.webp" class="d-block w-100" alt="...">
+                <div class="position-absolute top-0 start-50 translate-middle-x text-black d-sm-block w-20 h-20">
+                <h1 class="fs-1 fw-bold text-center mt-5">Donate to Us</h1>
+                  <p class="fs-4">Click <a href="about.html#parallaxFour" class="text-black">Here</a> and see how you can donate to us</p>
+              </div>
+            </div>
+          </div>
+          <!-- BUTTON classes for the carousel here -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        </div>
+      </div>
+    </div>
+
 
     <!-- DIV for the photo links for categories starts here -->
-    <section class="container">
+    <section class="container mb-3" id="images-row">
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <b>Mens</b>
-          <a href="mens.html"><img src="./img/mens1.jpg"></a>
+          <a href="mens.html"><img src="./img/mens.webp"></a>
         </div>
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <b>Womens</b>
-          <a href="womens.html"><img src="./img/womens1.webp"></a>
+          <a href="womens.html"><img src="./img/womens.webp"></a>
         </div>
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <b>Kids</b>
           <a href="kids.html"><img src="./img/kids.webp"></a>
         </div>
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <b>Antiques</b>
-          <a href="antiques.html"><img src="./img/antique.webp"></a>
+          <a href="antiques.html"><img src="./img/antique.jpeg"></a>
         </div>
       </div>
     </section>
 
-    <!-- DIV for the shop all button starts here -->
+<!-- DIV for the shop all button starts here -->
     <div class="container">
-      <div class="row align-items-start">
-        <div class="col"></div>
-        <div class="justify content center"><a class="button" href="shop.html">Shop All</a></div>
-        <div class="col"></div>
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-3"></div>
+        <div class="col-md-3 d-flex justify-content-center"><a class="button text-decoration-none" href="shop.html">Shop All</a></div>
+        <div class="col-md-3"></div>
       </div>
 
-      <!-- DIV for footer starts here -->
+  <!-- DIV for footer starts here -->
     <footer class="container">
       <div class="row">
         <p class="col-sm-4">&copy; 2022 REFLOW</p>
         <ul class="col-sm-8">
           <li class="col-sm-1">
-            <a href="https://twitter.com" class="fa fa-twitter"></a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
           </li>
           <li class="col-sm-1">
-            <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
           </li>
           <li class="col-sm-1">
-            <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
           </li>
           <li class="col-sm-1">
-            <a href="https://www.pinterest.com" class="fa fa-pinterest"></a>
+            <a href="https://www.pinterest.com"><i class="fab fa-pinterest"></i></a>
           </li>
         </ul>
       </div>
     </footer>
+
+  <!-- Javascript: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
   
-  </html>
   
