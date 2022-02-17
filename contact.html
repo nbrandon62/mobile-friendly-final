@@ -46,6 +46,7 @@
       <!-- Bootstrap 5 starter form -->
     <form id="contactForm" data-sb-form-api-token="API_TOKEN">
       <h1 class="fs-2 fw-bold text-center p-3">Get in Touch With Us!</h1>
+
     <!-- Name input -->
     <div class="mb-3">
       <label class="form-label fw-bold" for="name">Name</label>
@@ -82,11 +83,25 @@
     <div class="d-grid">
       <button class="btn btn-dark text-white btn-lg w-20" id="submitButton" type="submit">Submit</button>
     </div>
-
+      <!-- Accordion dropdown bar -->
+    <div class="accordion mt-5" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Want to come work with us?
+          </button>
+        </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Too bad we are not hiring.
+        </div>
+      </div>
+    </div>
+  </div>
+  
     </form>
     </div>
   </div>
-
 </div>
 
 <!-- DIV for footer starts here -->
