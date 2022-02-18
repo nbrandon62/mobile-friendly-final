@@ -119,10 +119,12 @@ body, html, .jumbotron{
 /* individual parallax images */
 #parallaxOne{
   background-image: url(../img/parallax-1.webp);
+  display: flex;
 }
 
 #parallaxTwo{
   background-image: none;
+  position: relative;
 }
 
 #parallaxThree{
@@ -133,19 +135,12 @@ body, html, .jumbotron{
   background-image: url(../img/parallax-four.webp);
 }
 
-#parallaxFive{
-  /* background-image: url(../img/beach-1.webp); */
-}
-
-/* allow navbar to follow scrolling by using position: fixed, also provide some margin */
-.navbar_container{
-  /* position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 1;
-  margin-left: 11%;
-  margin-right: 11%;
-  margin-top: 0.5%; */
+@media only screen and (max-width: 1200px){
+  #parallaxThree{
+    background-image: url(../img/donation.webp);
+    background-size: 100% 65%;
+  }
+  /* Tablets [601px -> 1200px] */
 }
 
     /* FOOTER css and media queries start here */
@@ -174,9 +169,10 @@ body, html, .jumbotron{
         margin: 12px;
       }
     }
-    @media (min-width: 500px){
+    @media (min-width: 300px){
       footer li{
-        margin: 16px;
+        margin: 10px;
+        font-size: 12px;
       }
     }
   

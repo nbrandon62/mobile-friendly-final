@@ -149,9 +149,10 @@ body {
       margin: 12px;
     }
   }
-  @media (min-width: 500px){
+  @media (min-width: 300px){
     footer li{
-      margin: 16px;
+      margin: 10px;
+      font-size: 12px;
     }
   }
 
